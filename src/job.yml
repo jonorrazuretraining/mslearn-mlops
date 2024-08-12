@@ -11,5 +11,5 @@ inputs:
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:testdev-vm
-experiment_name: 
+experiment_name: training_diabetes_model
 description: Diabetes training
