@@ -2,10 +2,10 @@ $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
 command: >-
   python train.py
-  --
-  --
+  --training_data ${{inputs.training_data}}
+  --reg_rate ${{inputs.reg_rate}}
 inputs:
-  training_data: 
+  training_data:
     type: uri_folder 
     path: https://github.com/jonorrazuretraining/mslearn-mlops/tree/main/experimentation/data
   reg_rate: 0.01
