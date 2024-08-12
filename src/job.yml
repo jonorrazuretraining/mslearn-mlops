@@ -7,9 +7,9 @@ command: >-
 inputs:
   training_data: 
     type: uri_folder 
-    path: /experimentation/data
+    path: https://github.com/jonorrazuretraining/mslearn-mlops/tree/main/experimentation/data
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:testdev-vm
 experiment_name: 
-description: 
+description: Diabetes training
